@@ -13,7 +13,6 @@
   - [Tech stack](#tech-stack)
   - [Screenshots](#screenshots)
   - [What's next for MedBay-V1](#whats-next-for-medbay-v1)
-  - [Demo](#demo)
 
 ## Installation
 
@@ -51,10 +50,83 @@ The global COVID-19 pandemic has introduced massive changes in both need and ava
 
 WORKOUT PLANNER AND MONITOR Physical activity and exercise have many immediate and long-term health benefits. Most importantly, regular activity can improve your quality of life. A minimum of 30 minutes a day can allow you to enjoy these benefits. So, in our application we have a workout planner that gives you a set of exercises, shows you how to do them and then checks if you are doing them correctly. Our posture detection system will check if you are doing correctly and when the set count gets over, it moves on to the next exercise. Thereby ensuring your fitness and physical health. HEART RATE MONITORING SYSTEM Our application has an unique heart rate monitoring system, which is a non-contact based system to measure Heart Rate using real-time application using camera. Heart Rate (HR) is one of the most important Physiological parameter and a vital indicator of people‘s physiological state. The main principle is to extract heart rate information from facial skin color variation caused by blood circulation to monitor the user’s‘ physiological state Detect face, align and get ROI using facial landmarks Apply band pass filter with fl = 0.8 Hz and fh = 3 Hz, which are 48 and 180 bpm respectively Average color value of ROI in each frame is calculate pushed to a data buffer which is 150 in length FFT the data buffer. The highest peak is Heart rate Amplify color to make the color variation visible AI DIET PLANNER There is a diet planner in our application, which helps our end-users get a customized diet plan for them. There are two part, one which takes in basic user details for profile building, which later will be utilized to connect other users with the similar likes and disliked and they can share their weekly diet plans and commencements. The second part takes in all important metrics like the person’s favorite food, diet, cuisines, nutrients he/she wants their diet to be comprised of, and also about any past medical history or diseases they suffer from. All these inputs are fed into our ML model which accurately forms a diet planner for the user, listing out all the meals with their nutrient value and ratings to the user. Using celery running in the background, the diet planner refreshed weekly giving a diversified option to the users. REALTIME GROUP YOGA POSTURE MONITORING SYSTEM In these difficult times, mental as well as physical health need to be looked into. Hence, our application is at the service with a yoga monitoring system, where multiplayers can join and share their video and audio. A particular yoga posture would be displayed to the users at a time, and the users have to do yoga as displayed in the posture. Our posture detection system would run in the background for each user and score them real-time based on their accurate performance, and finally declare a winner in the end. Thus physical health is monitored as well mental health is maintained by social connection in this unique effort. DEPRESSION CHATBOT In today’s pandemic situation, when everyone is at home, mental health has become an even more important thing to focus on. That is why our application comes with a depression chatbot which serves as the patient’s listener in these time of crisis. And using our NLP Sentiment analysis models trained in the backend on TensorFlow, it supports and cheers the person up person based on all the conditions they have mentioned. It suggests some appropriate quotes about life, love and family. It also suggests some songs that can uplift user moods and help get over the hard times. Hence, it reduces the mental stress or worry a person goes through especially on low days. WORKOUT PLANNER AND POSTURE DETECTOR In today’s pandemic situation, when everyone is at home, physical health has also become an important aspect to focus on. Thus our workout planner comes with a posture detector where certain exercise poses are taught to the user, and they have to try their best to attain that pose. There is a unique timer attached with each pose maintaining the exercise duration which has to be completed before going to the next exercise. There is also a scoring system based on the posture detection system running in real-time in the background. MEDICAL CHATBOT The application comes with a chatbot MEDBOT, which serves as the patient’s listener in these time of crisis. Any person can chat with our chatbot describing about their current state of body and what they are suffering from, mental or physical. Our chatbot comes to their assist, asks them counter questions about their exact symptoms or feelings they are undergoing. And using ML and NLP models trained in the backend, it predicts the disease for the person based on all the symptoms they have mentioned. Our chatbot also predicts type of doctor to consult for the disease. Hence, it reduces the hassle or worry a person goes through while thinking about which hospital or which doctor to consult for his symptoms. MEDICAL TEST COMPARISON There is often a variety of prices for medical tests offered by different hospitals. People are confused and do not get a clear comparison statistic of the medical tests. Hence, MEDBAY has a unique section in the patient portal where users can search for their desired medical test. It would enlist all the hospitals where the tests are available and lists them in increasing order of price. Thus, users can get a clearer insight. PHARMACEUTICAL STORE MEDBAY has a linked up pharmacy store where, allopathy, homeopathy as well as ayurvedic medicines are available and any user can buy from. It has integrated STRIPE payment gateway for smooth checkout. It has home delivery system which would really help the older generation. It connects medicine from local pharmacy stores based on geolocation, hence reducing the delivery price to minimum.
 
+Here are the main points from the paragraph:
+
+1. WORKOUT PLANNER AND MONITOR:
+   - Regular physical activity improves quality of life.
+   - The application offers a workout planner with exercise sets and instructions.
+   - Posture detection system ensures correct exercise performance.
+
+2. HEART RATE MONITORING SYSTEM:
+   - The application has a non-contact heart rate monitoring system.
+   - It uses real-time camera-based measurement of facial skin color variation.
+   - Heart rate information is extracted and monitored for physiological state.
+
+3. AI DIET PLANNER:
+   - The application includes a diet planner based on user inputs.
+   - User details, preferences, and medical history are considered.
+   - ML model generates customized diet plans with nutrient values and ratings.
+
+4. REALTIME GROUP YOGA POSTURE MONITORING SYSTEM:
+   - The application offers a yoga monitoring system for multiple users.
+   - Users join, share video and audio, and perform displayed yoga postures.
+   - Posture detection system scores users based on accurate performance.
+
+5. DEPRESSION CHATBOT:
+   - The application includes a chatbot to support mental health.
+   - NLP sentiment analysis models provide appropriate responses.
+   - Suggestions include quotes, songs, and upliftment during tough times.
+
+6. WORKOUT PLANNER AND POSTURE DETECTOR:
+   - The workout planner includes a posture detector.
+   - Users learn exercise poses and aim for correct posture.
+   - Real-time scoring based on posture detection system.
+
+7. MEDICAL CHATBOT:
+   - The application features a chatbot for medical assistance.
+   - Users describe symptoms, and the chatbot predicts the disease.
+   - Recommendations for the type of doctor to consult are provided.
+
+8. MEDICAL TEST COMPARISON:
+   - The patient portal allows users to compare prices of medical tests.
+   - Hospitals offering the tests are listed in increasing order of price.
+
+9. PHARMACEUTICAL STORE:
+   - The application has an integrated pharmacy store.
+   - Users can purchase allopathy, homeopathy, and ayurvedic medicines.
+   - Features include online payment, home delivery, and local store connection.
+
+These points summarize the main features and functionalities of the application.
+
 
 ## How we built it 
 
 Made in Django Powered by superior quality design, to intrigue users. The frontend is mainly made on full bootstrap and Night owl CDN and Bulma, providing state of the art UI. We have tried to keep the UI/UX transitions as much smooth and user friendly as possible. We decided to use Django as the core of our application as it is powered by Python. All the work is done on the very latest Django version and Python 3.7.3 . Python enabled us to use all the machine learning and recommendation technology to its full potential. The Django model gives us a total boost by letting us easily override the BASE USER model. The chatbot is a state of the art model trained via RASA NLU It is capable of differentiating between the different user Intent, which then serves as an input to the various Machine and Deep Learning Algorithms to Predict the various Diseases, Drugs and Doctors from our Database. Also we have implemented a Diet Planner System, which initially takes all the inputs from the users and then trains on an intricate machine learning model achieved by ensemble learning algorithms. These algorithms predict the exact diet plan for an entire week or month based on the users choice. It also is connected to our database, from where it estimates the different ingredients used, and the calories. The diet prediction algorithm, automatically runs every 7 days, by celery. It triggers an automatic notification to the users to re feed the data, if any changes are detected in their personal taste and body mass indexing. It is a very powerful system, which can be extended to various domains. It also amounts the total calories that will be consumed by the user for the particular recommendation, by feeding the items recommended into another Machine Learning Model. Thus, this system enables a remote diet system, which predicts accurately, keeping in mind the health and well being of all our users and the entire society. Our depression chatbot runs on trained sentiment analysis model and also has a recommender database having a collection of quotes and songs. Predicting the sentiment of the user, the chatbot recommends some songs and likely quotes to uplift the user’s mood. Uses GTTS module to pass in the chatbot response and output it in a soothing female voice, to uplift user mood instantly. The yoga posture detector and exercise planner makes use of real time posture detection system using Tensorflow PosNet. The video of the users are monitored and analyzed in real time generating a score metric for each measure based on accuracy of the moves or postures of the person. There is also a timer and counter to keep track of the duration and repetitions of each exercise the person is doing. The heart rate monitoring system is achieved by : Detect face, align and get ROI using facial landmarks Apply band pass filter with fl = 0.8 Hz and fh = 3 Hz, which are 48 and 180 bpm respectively. Average color value of ROI in each frame is calculate pushed to a data buffer which is 150 in length. FFT the data buffer. The highest peak is Heart rate Amplify color to make the color variation visible. The yoga application makes use of real time posture detection system. Tensorflow PosNet is used for posture detection. The video of the users are monitored and analyzed in real time generating a score metric for each measure based on accuracy of the moves or postures of the person playing the yoga game. That score metric is then used in the end to declare the winner with the maximum score. The E-Tests provides recommendation to users based on various cost factors and hospital locations, providing a detailed and accurate comparisons, helping the users to choose the best. MEDBAY has a linked up pharmacy store where, allopathy, homeopathy as well as ayurvedic medicines are available and any user can buy from. It has integrated STRIPE payment gateway for smooth checkout. It has home delivery system which would really help the older generation. It connects medicine from local pharmacy stores based on geolocation, hence reducing the delivery price to minimum.
+
+Here are the main points from the paragraph:
+
+1. The application is made in Django and powered by a superior quality design.
+2. The frontend uses full bootstrap, Night owl CDN, and Bulma, providing a state-of-the-art UI.
+3. The UI/UX transitions are designed to be smooth and user-friendly.
+4. Django is chosen as the core of the application because it is powered by Python.
+5. The latest Django version (unspecified) and Python 3.7.3 are used.
+6. Python enables the use of machine learning and recommendation technology.
+7. The Django model allows easy override of the BASE USER model.
+8. A state-of-the-art chatbot trained via RASA NLU is implemented, capable of differentiating user intent and providing predictions from a database.
+9. A Diet Planner System is implemented using intricate machine learning models achieved by ensemble learning algorithms.
+10. The diet prediction algorithm runs every 7 days, triggering notifications to update data if changes are detected.
+11. The system can be extended to various domains and accurately predicts calorie consumption.
+12. The depression chatbot uses a trained sentiment analysis model and has a recommender database with quotes and songs to uplift the user's mood.
+13. The chatbot's response is output in a soothing female voice using the GTTS module.
+14. The yoga posture detector and exercise planner use real-time posture detection with Tensorflow PosNet.
+15. The system monitors and analyzes the user's video in real-time, generating a score metric based on the accuracy of the moves or postures.
+16. There is a timer and counter to track the duration and repetitions of each exercise.
+17. The heart rate monitoring system detects the user's heart rate by applying filters and analyzing the average color value of the face region.
+18. The yoga application uses real-time posture detection and generates a score metric for each measure, declaring a winner at the end.
+19. The E-Tests provide recommendations to users based on cost factors and hospital locations, helping them choose the best options.
+20. The application has a linked pharmacy store where allopathy, homeopathy, and ayurvedic medicines are available for purchase.
+21. It integrates the STRIPE payment gateway for smooth checkout and offers home delivery.
+22. The system connects to local pharmacy stores based on geolocation to reduce delivery costs.
 
 
 ## Main features
@@ -131,7 +203,3 @@ Made in Django Powered by superior quality design, to intrigue users. The fronte
  - Integration of local languages to our product and expand our products to several more local medicine distributors for better user experience and wider reach out.
  - Make our chatbot robust to handle more complex enquiry or product detail enquiry
  - Include a voice based assitant to navigate the entire application
-
-## Demo
-
-https://youtu.be/BzWEbHi-c3Q
